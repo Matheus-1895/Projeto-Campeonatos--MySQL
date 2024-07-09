@@ -15,7 +15,6 @@ INSERT INTO Jogador (nacionalidade, idade, clube, nome_jogador) VALUES
     ('Argentino', '1995-08-21', 'Flamengo', 'Agustín Rossi'),
     ('Brasileiro', '2001-08-28', 'Flamengo', 'Bruno Henrique'),
     ('Brasileiro', '1997-06-19', 'Flamengo', 'Ayrton Lucas'),
-    ('Uruguaio', '1997-06-01', 'Flamengo', 'Arrascaeta'),
     ('Brasileiro', '1996-02-12', 'Flamengo', 'Fabrício Bruno'),
     ('Uruguaio', '1994-06-01', 'Flamengo', 'Giorgian De Arrascaeta'),
     ('Brasileiro', '2001-05-24', 'Flamengo', 'Matheus Cunha'),
