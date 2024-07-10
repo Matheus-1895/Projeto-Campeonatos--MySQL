@@ -1,5 +1,5 @@
 INSERT INTO Campeonato (nome_campeonato , ano) VALUES
- ('Brasileiro' , '2024');
+	('Brasileiro' , '2024');
 
 INSERT INTO Clube (clube, cidade) VALUES
     ('Flamengo', 'Rio de Janeiro'),/*1*/
@@ -24,7 +24,7 @@ INSERT INTO Clube (clube, cidade) VALUES
     ('Cruzeiro', 'Belo Horizonte');/*20*/
 
 INSERT INTO Estadio (cidade, estado, nome_estadio, capacidade, clube) VALUES 
-	('Rio de Janeiro', 'Rio de Janeiro', 'Maracanã', 78838, 'Flamengo'),
+    ('Rio de Janeiro', 'Rio de Janeiro', 'Maracanã', 78838, 'Flamengo'),
     ('Rio de Janeiro', 'Rio de Janeiro', 'Maracanã', 78838, 'Fluminense'),
     ('Fortaleza', 'Ceará', 'Castelão', 63903, 'Fortaleza'),
     ('Rio de Janeiro', 'Rio de Janeiro', 'São Januário', 21880, 'Vasco da Gama'),
@@ -48,6 +48,22 @@ INSERT INTO Estadio (cidade, estado, nome_estadio, capacidade, clube) VALUES
     ('Belo Horizonte', 'Minas Gerais', 'Arena Independência', 23018, NULL),
     ('Goiânia', 'Goiás', 'Serra Dourada', 50049, NULL);
 
+INSERT INTO Arbitro (nome_arbitro, idade, federacao) VALUES 
+	('Wilton Pereira Sampaio', '1982-12-28', 'Federação Goiana de Futebol'),
+	('Raphael Claus', '1979-09-06', 'Federação Paulista de Futebol'),
+	('Bruno Arleu de Araújo', '1982-05-03', 'Federação de Futebol do Estado do Rio de Janeiro'),
+	('Luiz Flávio de Oliveira', '1977-12-13', 'Federação Paulista de Futebol'),
+	('Leandro Pedro Vuaden', '1975-06-25', 'Federação Gaúcha de Futebol'),
+	('Anderson Daronco', '1981-01-05', 'Federação Gaúcha de Futebol'),
+	('Flávio Rodrigues de Souza', '1989-05-11', 'Federação Paulista de Futebol'),
+	('André Luiz de Freitas Castro', '1979-01-05', 'Federação Goiana de Futebol'),
+	('Marcelo de Lima Henrique', '1971-08-26', 'Federação Pernambucana de Futebol'),
+	('Ramon Abatti', '1989-09-18', 'Federação Catarinense de Futebol'),
+	('Paulo Cesar Zanovellio', '1990-01-08', 'Federação Mineira de Futebol'),
+	('Rodrigo José Pereira de Lima', '1987-03-19', 'Federação Paraense de Futebol'),
+        ('Maguielson Lima Barbosa', '1991-06-18', 'Federação de Futebol do Distrito Federal'),
+	('Bruno Pereira Vasconcelos', '1989-12-18', 'Federação Bahiana de Futebol');
+    
 INSERT INTO Jogo (data, id_jogo, hora, nome_estadio, nome_campeonato, ano, id_arbitro) VALUES 
     ('2024-04-13', 1, '18:30', 'Beira-Rio', 'Brasileiro', 2024, 12),
     ('2024-04-13', 2, '18:30', 'Estádio Heriberto Hülse', 'Brasileiro', 2024, 14),
@@ -121,9 +137,9 @@ INSERT INTO Gols (id_jogo, id_jogador, clube) VALUES
     ('19', '227', 'Botafogo');
 
 INSERT INTO Jogo_clube (id_clube ,id_jogo ) VALUES
-	('8','1'),
+    ('8','1'),
     ('13','1'),
-	('14','2'),
+    ('14','2'),
     ('18','2'),
     ('6','3'),
     ('16','3'),
@@ -141,7 +157,7 @@ INSERT INTO Jogo_clube (id_clube ,id_jogo ) VALUES
     ('11','9'),
     ('12','10'),
     ('3','10'),
-	('13', '11'),
+    ('13', '11'),
     ('6', '11'),
     ('16', '12'),
     ('7', '12'),
@@ -161,19 +177,3 @@ INSERT INTO Jogo_clube (id_clube ,id_jogo ) VALUES
     ('17', '19'),
     ('15', '20'),
     ('13', '20');
-
-INSERT INTO Arbitro (nome_arbitro, idade, federacao) VALUES 
-	('Wilton Pereira Sampaio', '1982-12-28', 'Federação Goiana de Futebol'),
-	('Raphael Claus', '1979-09-06', 'Federação Paulista de Futebol'),
-	('Bruno Arleu de Araújo', '1982-05-03', 'Federação de Futebol do Estado do Rio de Janeiro'),
-	('Luiz Flávio de Oliveira', '1977-12-13', 'Federação Paulista de Futebol'),
-	('Leandro Pedro Vuaden', '1975-06-25', 'Federação Gaúcha de Futebol'),
-	('Anderson Daronco', '1981-01-05', 'Federação Gaúcha de Futebol'),
-	('Flávio Rodrigues de Souza', '1989-05-11', 'Federação Paulista de Futebol'),
-	('André Luiz de Freitas Castro', '1979-01-05', 'Federação Goiana de Futebol'),
-	('Marcelo de Lima Henrique', '1971-08-26', 'Federação Pernambucana de Futebol'),
-	('Ramon Abatti', '1989-09-18', 'Federação Catarinense de Futebol'),
-	('Paulo Cesar Zanovellio', '1990-01-08', 'Federação Mineira de Futebol'),
-	('Rodrigo José Pereira de Lima', '1987-03-19', 'Federação Paraense de Futebol'),
-    ('Maguielson Lima Barbosa', '1991-06-18', 'Federação de Futebol do Distrito Federal'),
-	('Bruno Pereira Vasconcelos', '1989-12-18', 'Federação Bahiana de Futebol');
