@@ -31,6 +31,13 @@ CREATE TABLE Estadio (
 );
 ALTER TABLE Estadio MODIFY COLUMN clube VARCHAR(50) NULL;
 
+CREATE TABLE Arbitro (
+    id_arbitro INT PRIMARY KEY AUTO_INCREMENT,
+    nome_arbitro VARCHAR(50),
+    idade DATE,
+    federacao VARCHAR(100)
+);
+
 CREATE TABLE Jogo (
     id_jogo INT PRIMARY KEY AUTO_INCREMENT,
     data DATE,
@@ -52,11 +59,4 @@ CREATE TABLE Gols (
     FOREIGN KEY (id_jogador) REFERENCES Jogador(id_jogador) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (id_jogo) REFERENCES Jogo(id_jogo) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (clube) REFERENCES Clube(clube) ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE Arbitro (
-    id_arbitro INT PRIMARY KEY AUTO_INCREMENT,
-    nome_arbitro VARCHAR(50),
-    idade DATE,
-    federacao VARCHAR(100)
 );
